@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InternCertify Verified Certificate</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#efefef;
+    color:#16335b;
+}
+
+header{
+    height:84px;
+    background:#fff;
+    border-bottom:1px solid #d9d9d9;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 22px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:500;
+}
+
+.menu{
+    font-size:28px;
+    color:#2c6db3;
+}
+
+.wrap{
+    padding:18px 22px 60px;
+}
+
+.title{
+    font-size:28px;
+    font-weight: 600;
+    line-height:1.35;
+    margin-bottom:50px;
+}
+
+.badge{
+    width:200px;
+    height:200px;
+    object-fit:contain;
+    margin-left:20px;
+    margin-bottom:30px;
+}
+
+.congrats{
+    font-size:15px;
+    font-weight:600;
+    /* font-weight: bolder; */
+    margin-bottom:28px;
+}
+
+.desc{
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:26px;
+}
+
+ul{
+    padding-left:20px;
+    margin-bottom:24px;
+}
+
+li{
+    font-size:15px;
+    line-height:1.9;
+}
+
+.note{
+    font-size:16px;
+    line-height:1.8;
+    font-style:italic;
+}
+
+/* FULL SCREEN MENU FIXED HERE */
+.mobile-menu{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:#fff;
+    overflow-y:auto;
+    z-index:999;
+}
+
+.mobile-menu.show{
+    display:block;
+}
+
+.menu-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 18px;
+    border-bottom:1px solid #eee;
+    font-size:22px;
+    font-weight:600;
+}
+
+.menu-head button{
+    width:44px;
+    height:44px;
+    border:1px dotted #3b82f6;
+    background:#fff;
+    color:#2563eb;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.mobile-menu a{
+    display:block;
+    padding:14px 20px;
+    color:#16335b;
+    text-decoration:none;
+    line-height:2;
+    border-bottom:1px solid #f1f1f1;
+}
+
+.mobile-menu a:hover{
+    background:#f7f7f7;
+}
+
+@media(min-width:769px){
+    .menu{
+        display:none;
+    }
+
+    .mobile-menu{
+        display:none !important;
+    }
+}
+
+@media(max-width:768px){
+    .menu{
+        display:block;
+        cursor:pointer;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">InternCertify</div>
+<div class="menu" onclick="toggleMenu()">≡</div>
+</header>
+
+<!-- FULL PAGE MENU -->
+<div id="mobileMenu" class="mobile-menu">
+
+<div class="menu-head">
+<span>InternCertify</span>
+<button onclick="toggleMenu()">✕</button>
+</div>
+
+<a href="#">TWM Verified Certificate – Shaik Asif Ali</a>
+<a href="#">InternCertify Verified Certificate – Bommisetti Bala Tripura Naga Maheshwari</a>
+<a href="#">InternCertify Verified Certificate – Sudarsanam Venkata Surya Manikanta</a>
+<a href="#">InternCertify Verified Certificate – A SANJAY</a>
+<a href="#">InternCertify Verified Certificate – A Subahan</a>
+<a href="#">InternCertify Verified Certificate – Murali Krishna</a>
+
+</div>
+
+<div class="wrap">
+
+<div class="title">
+InternCertify Verified Certificate - ABBUGONDI MURALI KRISHNA
+</div>
+
+<img class="badge"
+src="https://interncertify.com/wp-content/uploads/2024/06/20240622_155255_0000-1024x1024.png">
+
+<div class="congrats"> <strong> 🎉 CONGRATULATIONS 🎉 </strong>
+    
+</div>
+
+<div class="desc">
+    <strong>
+
+        It's a verified certificate from Intern Certify
+    </strong>
+</div>
+
+<ul>
+<li>Learner Full Name : ABBUGONDI MURALI KRISHNA</li>
+<li>Internship Course : Cloud Computing</li>
+<li>Duration : 16/02/2026 to 16/05/2026</li>
+</ul>
+
+<div class="note">
+The details accessed via the QR code are secure and will only display the information related to the learner’s internship.
+</div>
+
+</div>
+
+<script>
+function toggleMenu(){
+    document.getElementById("mobileMenu").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
